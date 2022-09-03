@@ -14,7 +14,6 @@ const cx = classNames.bind(styles)
 
 const Header = (props) => {
     const { activeIndex } = props
-    const [showMobileNav, setShowMobileNav] = useState(false)
 
     const router = useRouter()
     const {
@@ -50,37 +49,25 @@ const Header = (props) => {
 
     return (
         <header className={styles.header}>
-            <i className={styles.toggle} onClick={() => setShowMobileNav(true)}>≡</i>
             <nav className={styles.navbar}>
-                <div className={styles.menu_text_box}>
-                    <div className={styles.left_text}>
-                        <Link href="/">{t('home')}</Link>
-                        <Link href="/ido">IDO</Link>
-                    </div>
-                    <div className={styles.right_text}>
-                        <Link href="/reward">{t('Reward')}</Link>
-                        <a onClick={()=>window.open('https://w3swap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0xa1fE3DDBe189D804e51C29772d222ac1f155E58e')}>{t('buytor')}</a>
-                    </div>
-                </div>
-            </nav>
-            <nav className={cx(styles.mobile_nav, { hide: showMobileNav })} onClick={() => setShowMobileNav(false)}>
-                <ul onClick={(e) => { e.stopPropagation() }}>
-                    <li><Link href="/">{t('home')}</Link></li>
-                    <li><Link href="/ido">IDO</Link></li>
-                    <li><Link href="/reward">{t('Reward')}</Link></li>
-                    <li onClick={()=>window.open('https://w3swap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0xa1fE3DDBe189D804e51C29772d222ac1f155E58e')}>{t('buytor')}</li>
+                <i className={styles.logo}></i>
+                <ul>
+                    <Link href="/"><li className={styles.active}>Home</li></Link>
+                    <Link href="/"><li>Portfolio</li></Link>
+                    <Link href="/"><li>Awards</li></Link>
+                    <Link href="/"><li>Reviews</li></Link>
+                    <Link href="/"><li>Our Team</li></Link>
                 </ul>
             </nav>
-            
             <div className={styles.wallet}>
                 <Wallet />
             </div>
             <div className={styles.locale}>
                 <Link
-                href='#'
-                locale={router.locale === 'en' ? 'zh' : 'en'}
+                    href='#'
+                    locale={router.locale === 'en' ? 'zh' : 'en'}
                 >
-                {router.locale === 'en' ?"English": "中文"}
+                    {router.locale === 'en' ? "English" : "中文"}
                 </Link>
             </div>
             {props.children}

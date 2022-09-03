@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="957px" height="550px" viewBox="0 0 957 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 4</title>
+    <defs>
+        <rect id="path-1" x="113.819159" y="13.4229035" width="64.8115111" height="64.8115111" rx="16"></rect>
+        <filter x="-24.7%" y="-21.6%" width="149.4%" height="149.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.349019608   0 0 0 0 0.894117647  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="桌面端-HD" transform="translate(-280.000000, -1810.000000)">
+            <g id="编组-4" transform="translate(280.518489, 1823.620353)">
+                <g id="矩形备份-11" transform="translate(146.224914, 45.828659) rotate(45.000000) translate(-146.224914, -45.828659) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#0052E0" stroke-width="5" stroke-linejoin="square" x="116.319159" y="15.9229035" width="59.8115111" height="59.8115111" rx="16"></rect>
+                </g>
+                <rect id="矩形备份-14" stroke="#0052E0" stroke-width="5" transform="translate(409.664655, 216.695370) rotate(45.000000) translate(-409.664655, -216.695370) " x="271.248718" y="78.2794331" width="276.831874" height="276.831874" rx="16"></rect>
+                <rect id="矩形备份-16" stroke="#0052E0" stroke-width="5" transform="translate(833.117786, 413.093889) rotate(45.000000) translate(-833.117786, -413.093889) " x="748.711442" y="328.687544" width="168.812689" height="168.812689" rx="16"></rect>
+                <rect id="矩形备份-12" fill="#0040D4" transform="translate(409.531792, 158.099054) rotate(45.000000) translate(-409.531792, -158.099054) " x="376.63504" y="125.202302" width="65.7935037" height="65.7935037" rx="15"></rect>
+                <rect id="矩形备份-17" fill="#0040D4" transform="translate(719.841451, 413.417128) rotate(45.000000) translate(-719.841451, -413.417128) " x="686.9447" y="380.520376" width="65.7935037" height="65.7935037" rx="15"></rect>
+                <rect id="矩形备份-13" fill="#0040D4" transform="translate(536.208837, 55.318332) rotate(45.000000) translate(-536.208837, -55.318332) " x="519.514962" y="38.6244575" width="33.3877482" height="33.3877482" rx="10"></rect>
+                <rect id="矩形备份-18" fill="#0040D4" transform="translate(278.926777, 414.727621) rotate(45.000000) translate(-278.926777, -414.727621) " x="262.232903" y="398.033746" width="33.3877482" height="33.3877482" rx="10"></rect>
+                <rect id="矩形备份-19" fill="#0040D4" transform="translate(32.635560, 287.068583) rotate(45.000000) translate(-32.635560, -287.068583) " x="9.55873428" y="263.991758" width="46.1536519" height="46.1536519" rx="10"></rect>
+                <rect id="矩形备份-15" fill="#0040D4" transform="translate(918.392879, 204.581206) rotate(45.000000) translate(-918.392879, -204.581206) " x="895.316053" y="181.50438" width="46.1536519" height="46.1536519" rx="10"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

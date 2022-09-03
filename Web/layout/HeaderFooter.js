@@ -40,7 +40,7 @@ const HeaderFooter = (props) => {
           />
         </Head>
         <Header activeIndex={activeIndex} />
-        <main className={styles.container}>{props.children}</main>
+        <main className={styles.main}>{props.children}</main>
         <Footer />
       </div>
   );

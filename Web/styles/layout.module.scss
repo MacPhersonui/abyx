@@ -34,5 +34,48 @@
     font-style: normal
 }
 
-.container {
+@font-face {
+    font-family: Product;
+    src: url(../public/font/Product-Sans-Regular-2.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+.header {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+    .navbar {
+        padding: 22px 0;
+        .logo {
+            background: url(../public/layout/logo.svg) no-repeat center/100% auto;
+            float: left;
+            width: 120px;
+            height: 40px;
+        }
+        ul{
+            float: right;
+            font-family: Product;
+            li{
+                display: inline-block;
+                font-size: 16px;
+                color: #fff;
+                padding: 8px 25px;
+                margin: 0 10px;
+                cursor: pointer;
+                border: 2px solid transparent;
+                border-radius: 35px;
+                &.active, &:hover{
+                    border: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+.main{
+    position: relative;
+    overflow: hidden;
+    top: -136px;
 }
